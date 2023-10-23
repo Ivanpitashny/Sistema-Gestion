@@ -7,7 +7,7 @@
 
     <script src="https://kit.fontawesome.com/2296f7e3a6.js" crossorigin="anonymous"></script>
 
-
+    <link rel="stylesheet" href="css/home.css">
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
     
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css" rel="stylesheet">
@@ -15,17 +15,65 @@
     <title>Pagina Principal</title>
 </head>
 <body>
-    <h1>Calendario de Eventos</h1>
-        <div id="calendario"></div>
-        <div id="eventos">
-            <h2>Eventos Próximos</h2>
-            <ul id="lista-eventos">
 
-            </ul>
-            
+    <div class="fondo">
+        <div class="glosario-tabla">
+            <div class="glosario">
+                <h1>Glosario</h1>
+                <hr>
+                <ul>
+                <li>UDI 2 - Unidad de Definición Institucional 2</li><br>
+                <li>BD 1 - Base de Datos 1</li><br>
+                <li>PP 1 - Practicas Profesionalizantes 1</li><br>
+                <li>ING.T 2 - Ingenieria de Software 2</li><br>
+                <li>PSC - Problematica Socio-Contemporanea</li><br>
+                <li>IYD - Innovacion y Desarrollo Emprendedor</li><br>
+                <li>PR 1 - Programación 1</li><br>
+                <li>IT 2 - Ingles Tecnico 2</li><br>
+                <li>EST - Estadistica </li>
+                </ul>
+            </div>
+            <table class="tabla">
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>Row 1, Col 1</td>
+                    <td>Row 1, Col 2</td>
+                    <td>Row 1, Col 3</td>
+                    <td>Row 1, Col 4</td>
+                    <td>Row 1, Col 5</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Col 1</td>
+                    <td>Row 2, Col 2</td>
+                    <td>Row 2, Col 3</td>
+                    <td>Row 2, Col 4</td>
+                    <td>Row 2, Col 5</td>
+                </tr>
+                <tr>
+                    <td>Row 3, Col 1</td>
+                    <td>Row 3, Col 2</td>
+                    <td>Row 3, Col 3</td>
+                    <td>Row 3, Col 4</td>
+                    <td>Row 3, Col 5</td>
+                </tr>
+            </table>
         </div>
-
-        <script src="js/home.js"></script>
+        <div class="botones">
+            <button class="calificaciones" type="button"><a href="calificaciones.html">calificaciones</a></button>
+            <button class="mesa" type="button"><a href="mesa.html">Mesas</a></button>
+        </div>
+        
+    <footer class="footer">
+        <img src="img/cropped-Logo-IES-UCU.png" alt=logo>
+    </footer>
+    <script src="js/home.js"></script>
+</div>
 </body>
 
 </html>

@@ -1,7 +1,12 @@
 body{
-    background-color: #ffffff;
+    background-color: #AA0202;
 }
 
+.fondo{
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 20px;
+}
 section {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +19,7 @@ section {
     display:grid;
     place-items: center;
     margin: auto;
+    padding-top: 10px;
 }
 
 .footer img{
