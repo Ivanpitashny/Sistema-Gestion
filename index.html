@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://kit.fontawesome.com/2296f7e3a6.js" crossorigin="anonymous"></script> 
+
+    <title>Ingreso Sistema de Gestión</title>
+</head>
+
+<body>
+    <header class="logo">
+        <img src="img/IES 1.png" alt="logo">
+    </header>
+    <section>
+        <form>
+            <h1>Ingresar</h1>
+            <div class="usuariocontraseña">
+                <div class="inputLogin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                       <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <input type="Text" id="dni" placeholder="Ingrese su Dni" autocomplete="dni">
+                </div>
+                <div class="inputLogin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                    </svg>
+                    <input type="password" id="password" placeholder="Ingrese Contraseña" autocomplete="current-password">
+                </div>
+            </div>
+            <button id="loginButton" type="submit" value="login">Iniciar Sesión</button>  
+        </form>
+</section>
+<footer class="footer">
+    <img src="img/cropped-Logo-IES-UCU.png" alt=logo>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>
