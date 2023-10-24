@@ -1,0 +1,89 @@
+body{
+    background-color: #AA0202;
+}
+
+.section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    height: 80vh;
+ }
+
+
+ .materias {
+    list-style-type: none;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+ }
+
+ .materias li {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-style: normal;
+ }
+
+ .calificaciones{
+    background-color: darkgray;
+    color:#AA0202;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+ }
+
+.año{
+    background-color: #AA0202;
+    color: #fff;
+    font-style: normal;
+    text-align: center;
+}
+
+ .materias li:last-child {
+    border-bottom: none;
+ }
+
+ .fondo{
+    background-color: #AA0202;
+    padding: 30px;
+    border-radius: 15px;
+ }
+
+ .ia{
+    margin: auto;
+    display: grid;
+    place-items: center;
+ }
+
+ .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    background-color: #AA0202;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-color: #AA0202;
+    height: 30px;
+}
+
+#btnazul    {
+    background-color: #0F60FA;
+    border-color: #0F60FA;
+    height: 30px;
+    
+}
