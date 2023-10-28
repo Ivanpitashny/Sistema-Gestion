@@ -59,3 +59,44 @@ hr{
 .glosario-tabla{
     display: flex;
 }
+
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calificaciones,
+.mesa{
+    margin: 10px;
+    border-style: none;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    background-color: #AA0202;
+    border-radius: 20px;
+}
+
+
+.calificaciones a,
+.mesa a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ 
+
+.cerrar-sesion{
+    margin-left: 100px;
+    border-style: none;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    background-color: #0F60FA;
+    border-radius: 20px;
+}
+
+.cerrar-sesion a{
+    text-decoration: none;
+    color: #fff;
+}

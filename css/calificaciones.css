@@ -2,18 +2,19 @@ body{
     background-color: #AA0202;
 }
 
-.section {
+.tabla {
     display: grid;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #f0f0f0;
-    border-radius: 30px;
+       border-radius: 30px;
     height: 80vh;
  }
 
 
  .materias {
+   width: 800px;
+   text-align: center;
     list-style-type: none;
     padding: 0;
     background-color: #fff;
@@ -21,20 +22,43 @@ body{
     border-radius: 15px;
  }
 
- .materias li {
+ .año{
+   padding: 10px;
+   background-color: #AA0202;
+   border-radius: 5px;
+ }
+
+ #mat{
+   padding: 5px;
+   height: 25px;
+   border-radius: 10px;
+ }
+
+ #mat li {
+   background-color: #fff;
     padding: 5px;
     border-bottom: 1px solid #eee;
     text-align: center;
     font-style: normal;
  }
 
- .calificaciones{
+ .calificaciones-mesa{
+   padding: 10px;
+   display: flex;
+   height: 15px;
     background-color: darkgray;
     color:#AA0202;
     text-align: center;
+    align-content: center;
+    justify-content: center;
     border-radius: 15px 15px 0px 0px;
     font-weight: bold;
  }
+
+ .calificaciones-mesa li{
+   text-align: center;
+    align-content: center;
+    justify-content: center;}
 
 .año{
     background-color: #AA0202;
@@ -59,31 +83,45 @@ body{
     place-items: center;
  }
 
- .button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 15px;
-    box-sizing: border-box;
-    background-color: #f0f0f0;
+ .botones{
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-button {
-    padding: 3px 10px;
-    margin-bottom: 10px;
-    font-size: 13px;
-    background-color: #AA0202;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-    border-color: #AA0202;
-    height: 30px;
+.calificaciones,
+.mesa{
+   margin: 10px;
+   border-style: none;
+   height: 50px;
+   width: 150px;
+   color: #fff;
+   background-color: #AA0202;
+   border-radius: 20px;
 }
 
-#btnazul    {
-    background-color: #0F60FA;
-    border-color: #0F60FA;
-    height: 30px;
-    
+
+.calificaciones a,
+.mesa a{
+   text-decoration: none;
+   color: #fff;
 }
+
+
+
+.cerrar-sesion{
+   margin-left: 100px;
+   border-style: none;
+   height: 50px;
+   width: 150px;
+   color: #fff;
+   background-color: #0F60FA;
+   border-radius: 20px;
+}
+
+.cerrar-sesion a{
+   text-decoration: none;
+   color: #fff;
+}
+
+ 
