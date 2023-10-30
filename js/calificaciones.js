@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+window.onload= function(){
 //arrays con las materias por año
 //primer año
 const primerAno = [
@@ -45,48 +45,64 @@ const tercerAno = [
     "Práctica profesionalizante II"
 ];
 
-function populateTable() {
-    const list = document.querySelector('.materias');
-    alert("el archivo js se esta ejecutando")
-    // Create and add courses for the first year
-    const firstYearTitle = document.createElement('li');
-    firstYearTitle.textContent = "Primer año";
-    firstYearTitle.classList.add('año');
-    list.appendChild(firstYearTitle);
+var myList = document.getElementById("miLista");
+// creando lista primer año
+var titulo = document.createElement("ul");
+var tituloTexto = document.createTextNode("Primer Año");
+titulo.appendChild(tituloTexto);
 
-    for (const course of primerAno) {
-        const courseItem = document.createElement('li');
-        courseItem.textContent = course;
-        courseItem.classList.add('mat');
-        list.appendChild(courseItem);
-    }
+// Aquí le agregamos la clase "año" al elemento titulo
+titulo.setAttribute("class", "año");
 
-    // Create and add courses for the second year
-    const secondYearTitle = document.createElement('li');
-    secondYearTitle.textContent = "Segundo año";
-    secondYearTitle.classList.add('año');
-    list.appendChild(secondYearTitle);
+myList.appendChild(titulo);
 
-    for (const course of segundoAno) {
-        const courseItem = document.createElement('li');
-        courseItem.textContent = course;
-        courseItem.classList.add('mat');
-        list.appendChild(courseItem);
-    }
 
-        // Create and add courses for the second year
-    const tercerYearTitle = document.createElement('li');
-    tercerYearTitle.textContent = "Tercer Año";
-    tercerYearTitle.classList.add('año');
-    list.appendChild(tercerYearTitle);
-
-    for (const course of tercerAno) {
-        const courseItem = document.createElement('li');
-        courseItem.textContent = course;
-        courseItem.classList.add('mat');
-        list.appendChild(courseItem);
-    }
+// A continuación, recorremos los elementos de la lista y los agregamos al HTML
+for (var i = 0; i < primerAno.length; i++) {
+   var listItem = document.createElement("li");
+   var textNode = document.createTextNode(primerAno[i]);
+   listItem.appendChild(textNode);
+   listItem.id = "mat";
+   myList.appendChild(listItem);
 }
 
-// Call the function to populate the table
-populateTable();
+
+// creando lista para segundo año
+var titulo = document.createElement("ul");
+var tituloTexto = document.createTextNode("Segundo Año");
+titulo.appendChild(tituloTexto);
+
+// Aquí le agregamos la clase "año" al elemento titulo
+titulo.setAttribute("class", "año");
+
+myList.appendChild(titulo);
+
+
+// A continuación, recorremos los elementos de la lista y los agregamos al HTML
+for (var i = 0; i < segundoAno.length; i++) {
+   var listItem = document.createElement("li");
+   var textNode = document.createTextNode(segundoAno[i]);
+   listItem.appendChild(textNode);
+   listItem.id = "mat";
+   myList.appendChild(listItem);
+}
+//creando lista para tercer año
+var titulo = document.createElement("ul");
+var tituloTexto = document.createTextNode("Tercer Año");
+titulo.appendChild(tituloTexto);
+
+// Aquí le agregamos la clase "año" al elemento titulo
+titulo.setAttribute("class", "año");
+
+myList.appendChild(titulo);
+
+
+// A continuación, recorremos los elementos de la lista y los agregamos al HTML
+for (var i = 0; i < segundoAno.length; i++) {
+   var listItem = document.createElement("li");
+   var textNode = document.createTextNode(tercerAno[i]);
+   listItem.appendChild(textNode);
+   listItem.id = "mat";
+   myList.appendChild(listItem);
+}
+};
